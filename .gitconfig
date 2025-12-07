@@ -8,6 +8,7 @@
 [core]
 	pager = 
 	editor = nvim
+	quotepath = false
 [difftool]
 	prompt = false
 [merge]
@@ -24,3 +25,5 @@
 	ff = only
 [push]
 	autoSetupRemote = true
+[credential]
+	helper = store

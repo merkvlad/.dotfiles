@@ -30,6 +30,7 @@ alias yas="yandex-disk sync"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 alias ls="exa --icons=always --color=auto --group-directories-first --long"
 alias ip="ip -c"
+alias ct="cargo test"
 
 
 remove_poetry_envs() {
@@ -38,9 +39,9 @@ remove_poetry_envs() {
     done
 }
 
-export QT_AUTO_SCREEN_SCALE_FACTOR=1.25
-export QT_ENABLE_HIGHDPI_SCALING=1.25
-export QT_FONT_DPI=120
+# export QT_AUTO_SCREEN_SCALE_FACTOR=1.25
+# export QT_ENABLE_HIGHDPI_SCALING=1.25
+# export QT_FONT_DPI=120
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -48,6 +49,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # Added by LM Studio CLI tool (lms)
 export PATH="$PATH:/home/vlad/.cache/lm-studio/bin"
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
+export PATH="$PATH:/home/vlad/.cargo/bin:$PATH"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
