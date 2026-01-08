@@ -20,7 +20,6 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Aliases
-alias python39="/home/vlad/.local/share/Python3.9/python3.9"
 alias rmpattern="docker run --rm -v "$(pwd)":/data vladmerk/rmpattern"
 alias yas="yandex-disk sync"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
@@ -41,6 +40,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="$PATH:/home/vlad/.cargo/bin:$PATH"
 
-if [[ $- == *i* ]]; then
-  fastfetch
-fi
+#if [[ $- == *i* ]]; then
+#  fastfetch
+#fi
