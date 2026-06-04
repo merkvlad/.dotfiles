@@ -26,6 +26,7 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 alias ls="exa --icons=always --color=auto --group-directories-first --long"
 alias ip="ip -c"
 alias ct="cargo test"
+alias ssh="TERM=xterm-256color ssh"
 
 
 remove_poetry_envs() {
@@ -43,3 +44,8 @@ export PATH="$PATH:/home/vlad/.cargo/bin:$PATH"
 #if [[ $- == *i* ]]; then
 #  fastfetch
 #fi
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/vlad/.lmstudio/bin"
+# End of LM Studio CLI section
+
