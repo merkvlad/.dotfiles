@@ -49,3 +49,9 @@ export PATH="$PATH:/home/vlad/.cargo/bin:$PATH"
 export PATH="$PATH:/home/vlad/.lmstudio/bin"
 # End of LM Studio CLI section
 
+export PATH=$PATH:~/.local/share/go/bin
+
+
+# Generated for pdtm. Do not edit.
+export PATH=$PATH:/home/vlad/.pdtm/go/bin
+
