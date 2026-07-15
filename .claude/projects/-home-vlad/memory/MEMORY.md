@@ -1,0 +1,4 @@
+- [opencode-claude-handoff-pipeline](opencode_claude_handoff_pipeline.md) — hybrid Claude+opencode plan via file handoff, to save usage limits
+- [opencode-agents-md-symlink](opencode_agents_md_symlink.md) — ~/.claude/CLAUDE.md symlinks to ~/.config/opencode/AGENTS.md
+- [opencode-playwright-mcp-incident](opencode_playwright_mcp_incident.md) — opencode understood AGENTS.md rules but still acted without asking; proves text rules alone aren't enough
+- [germany-relocation-spataussiedler](germany_relocation_spataussiedler.md) — user is ethnic German, in Spätaussiedler program, considering actual relocation to Germany

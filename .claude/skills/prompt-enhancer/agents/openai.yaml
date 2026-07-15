@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prompt Enhancer"
+  short_description: "Refine ambiguous or overloaded prompts"
+  default_prompt: "Use $prompt-enhancer to turn my rough task request into a precise prompt or ask only the blocking clarification questions."
