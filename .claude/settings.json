@@ -1,3 +1,36 @@
 {
-  "theme": "dark"
+  "model": "opus",
+  "enabledPlugins": {
+    "rust-analyzer-lsp@claude-plugins-official": true
+  },
+  "theme": "dark",
+  "agentPushNotifEnabled": true,
+  "autoMode": {
+    "environment": [
+      "### Org-wide",
+      "**Organization**: None configured",
+      "**Cloud provider(s)**: None configured",
+      "**Repository visibility**: Private — merkvlad/Notes (github.com:merkvlad/Notes.git)",
+      "**Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
+      "**Secrets management**: None configured — note: `.passbd/passdb.kdbx` (KeePass DB tracked in-repo) is an opaque encrypted binary; never read, print, or exfiltrate its contents",
+      "**Default / protected branches**: Default branch `master`; no protected branches listed (rulesets not queryable here, so this is not a confirmed absence of protection)",
+      "**CI/CD deploy targets**: None configured",
+      "**Network posture**: None configured",
+      "**Source control**: The trusted repo (merkvlad/Notes, github.com:merkvlad/Notes.git) only — no additional orgs configured",
+      "**Trusted internal domains**: None configured",
+      "**Trusted cloud buckets**: None configured",
+      "**Key internal services**: None configured",
+      "**Internal package registry**: None configured",
+      "**Sensitive data locations & audiences**: `.passbd/passdb.kdbx` (KeePass database — opaque encrypted binary, never read/print/exfiltrate); `DevOps/Kubernetes/plans/k8s_plan.md` (flagged by sensitive-path scan — review before sharing outside the vault owner); any personal/confidential note content in this vault — share only with the vault owner (Vladimir)",
+      "**Data retention / declassification**: None configured",
+      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment",
+      "**Protected deployment namespaces / environments**: None configured — fall back to the Sensitive remote targets heuristic",
+      "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment",
+      "### User-specific",
+      "**Primary use of Claude Code**: personal knowledge-base maintenance (Obsidian vault: infosec, sysadmin, programming, language-learning, and personal notes) — not software development",
+      "**Trusted repo**: /home/vlad/Documents/Notes (this Obsidian vault), remote github.com:merkvlad/Notes.git — private repo, routine vault-backup commits/pushes are OK; large structural changes (reorg, history rewrite) should carry a real descriptive commit message per CLAUDE.md",
+      "**Org-specific CLIs**: None configured",
+      "Routine under this vault's root prefix: `git commit`/`git push` of note edits and the templated `vault backup: {date}` commit message are routine, expected activity per CLAUDE.md — not a signal of automation-without-review"
+    ]
+  }
 }
