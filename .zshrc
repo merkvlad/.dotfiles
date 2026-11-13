@@ -55,3 +55,11 @@ export PATH=$PATH:~/.local/share/go/bin
 # Generated for pdtm. Do not edit.
 export PATH=$PATH:/home/vlad/.pdtm/go/bin
 
+# Vault на стенде курса INSECA. Имя не резолвится через DNS стенда,
+# поэтому в /etc/hosts добавлена запись на ingress 10.0.200.100.
+# VAULT_SKIP_VERIFY — цепочка TLS на стенде не собирается (нет корня),
+# проверку приходится отключать. Для рабочих контуров так не делают:
+# правильное решение — добавить CA в доверенные.
+export VAULT_ADDR=https://vault.dso.inseca.io
+export VAULT_SKIP_VERIFY=true
+
