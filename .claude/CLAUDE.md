@@ -1,1 +1,0 @@
-/home/vlad/.config/opencode/AGENTS.md
